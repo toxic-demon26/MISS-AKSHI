@@ -20,6 +20,7 @@ psutil
 aiohttp
 Pillow>=4.2.0
 CurrencyConverter
+tzlocal~=2.0
 #googletrans
 google_trans_new
 jikanpy
