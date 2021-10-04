@@ -1,4 +1,4 @@
-__mod_name__ = "ᴍᴜsɪᴄ ᴘʟᴀʏ"
+dd_name__ = "ᴍᴜsɪᴄ ᴘʟᴀʏ"
 
 __help__ = """
 =>> *Song Playing* 🎧 
@@ -21,6 +21,6 @@ __help__ = """
 ❍ /userbotjoin - invite assistant to your chat
 ❍ /admincache - Refresh admin list
 =>>   *Use*
-1) Add @Flicks_Music_Bot in your group to admin with all permission
+1) Add @LunaAssistant in your group to admin with all permission
 2) Add Assistant I'd to your group (coming)
 """
