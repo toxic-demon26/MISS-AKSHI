@@ -19,7 +19,7 @@ async def awake(event):
   LUNA += f"🔴 **Pyrogram Version : {pyrover}** \n\n"
   LUNA += "**Thanks For Adding Me Here ❤️**"
   BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/lunatapibot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/lunasupportgroup")]]
-  await tbot.send_file(event.chat_id, PHOTO, caption=ALINA,  buttons=BUTTON)
+  await tbot.send_file(event.chat_id, PHOTO, caption=LUNA,  buttons=BUTTON)
 
 @MEMEK(pattern=("/reload"))
 async def reload(event):
