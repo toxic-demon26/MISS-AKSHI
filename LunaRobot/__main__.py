@@ -100,15 +100,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-**ʜᴀɪ**
-**ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ**[.](https://telegra.ph/file/3c16568ffc8bb284d6dc6.jpg)
+`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`[.](https://telegra.ph/file/e38e9af544bafa53a3b3b.jpg)
 """
 
-Luna_IMG = "https://telegra.ph/file/3c16568ffc8bb284d6dc6.jpg"
+Luna_IMG = "https://telegra.ph/file/e38e9af544bafa53a3b3b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Skyzo](t.me/XFLSkyzo) \
- Supporting isnt always financial! [All about music](t.me/userbot_support_id) \
+ You can support the project [zeinzo](t.me/zeinzo_1) \
+ Supporting isnt always financial! [All about music](t.me/lunasupportgroup) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -194,7 +193,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="[ ʙᴀᴄᴋ ]", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
                     ),
                 )
 
@@ -308,7 +307,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="[ ʙᴀᴄᴋ ]", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
                 ),
             )
 
@@ -361,14 +360,18 @@ def Luna_about_callback(update, context):
                  \n I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Luna's licensed under the GNU General Public License v3.0_""",
+                 \n\n_Luna's licensed under the GNU General Public License v3.0_
+                 \n❍ Awesome Bots @aboutraks
+                 \n❍ Support Group @lunasupportgroup
+                 \n❍ Assistant @LunaAssistant.
+                 \nHere is the 💾[Repository.](https://github.com/zeinzo)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                [
                 [
                  
-                    InlineKeyboardButton(text="[ ʙᴀᴄᴋ ]", callback_data="help_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")
                  ]
                 ]
             ),
@@ -395,7 +398,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="[ ʙᴀᴄᴋ ]", callback_data="source_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="source_back")
                  ]
                 ]
             ),
