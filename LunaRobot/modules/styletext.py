@@ -1,6 +1,6 @@
 from LunaRobot import dispatcher
 from LunaRobot.modules.disable import DisableAbleCommandHandler
-from LunaRobot.modules.helper_funcs.alternate import typing_action
+from LunaRobot.modules.helper_funsc.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
