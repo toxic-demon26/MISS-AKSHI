@@ -64,7 +64,7 @@ lel = 00000000
 async def photo(client: Client, message: Message):
     try:
         if not message.reply_to_message.photo:
-            await client.send_message(message.chat.id, "Reply pesan /edit ke foto yaㅤㅤ")
+            await client.send_message(message.chat.id, "Reply message /edit to photo")
             return
     except:
         return
@@ -76,40 +76,40 @@ async def photo(client: Client, message: Message):
     try:
         await client.send_message(
             chat_id=message.chat.id,
-            text="Pilih mode yang anda butuhkan di bawah!ㅤㅤㅤㅤ",
+            text="Choose the mode you need below!ㅤㅤㅤㅤ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʙʀɪɢʜᴛ", callback_data="bright"),
-                        InlineKeyboardButton(text="ᴍɪxᴇᴅ", callback_data="mix"),
-                        InlineKeyboardButton(text="ʙ&ᴡ", callback_data="b|w"),
+                        InlineKeyboardButton(text="BRIGHT", callback_data="bright"),
+                        InlineKeyboardButton(text="MIXED", callback_data="mix"),
+                        InlineKeyboardButton(text="B&W", callback_data="b|w"),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴄɪʀᴄʟᴇ", callback_data="circle"),
-                        InlineKeyboardButton(text="ʙʟᴜʀ", callback_data="blur"),
-                        InlineKeyboardButton(text="ʙᴏʀᴅᴇʀ", callback_data="border"),
+                        InlineKeyboardButton(text="CIRCLE", callback_data="circle"),
+                        InlineKeyboardButton(text="BLUR", callback_data="blur"),
+                        InlineKeyboardButton(text="BORDER", callback_data="border"),
                     ],
                     [
-                        InlineKeyboardButton(text="sᴛɪᴄᴋᴇʀ", callback_data="stick"),
-                        InlineKeyboardButton(text="ʀᴏᴛᴀᴛᴇ", callback_data="rotate"),
+                        InlineKeyboardButton(text="STICKER", callback_data="stick"),
+                        InlineKeyboardButton(text="ROTATE", callback_data="rotate"),
                         InlineKeyboardButton(
-                            text="ᴄᴏɴᴛʀᴀs", callback_data="contrast"
+                            text="CONTRAS", callback_data="contrast"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="sᴇᴘɪᴀ", callback_data="sepia"),
-                        InlineKeyboardButton(text="ᴘᴇɴᴄɪʟ", callback_data="pencil"),
-                        InlineKeyboardButton(text="ᴄᴀʀᴛᴏᴏɴ", callback_data="cartoon"),
+                        InlineKeyboardButton(text="SEPIA", callback_data="sepia"),
+                        InlineKeyboardButton(text="PENCIL", callback_data="pencil"),
+                        InlineKeyboardButton(text="CARTOON", callback_data="cartoon"),
                     ],
                     [
-                        InlineKeyboardButton(text="ɪɴᴠᴇʀᴛ", callback_data="inverted"),
-                        InlineKeyboardButton(text="ɢʟɪᴛᴄʜ", callback_data="glitch"),
+                        InlineKeyboardButton(text="INVERT", callback_data="inverted"),
+                        InlineKeyboardButton(text="GLITCH", callback_data="glitch"),
                         InlineKeyboardButton(
-                            text="ʀᴇᴍᴏᴠᴇᴅ ʙɢ", callback_data="removebg"
+                            text="REMOVE BG", callback_data="removebg"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close_e"),
+                        InlineKeyboardButton(text="❌", callback_data="close_e"),
                     ],
                 ]
             ),
