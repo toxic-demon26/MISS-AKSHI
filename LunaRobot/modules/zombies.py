@@ -119,7 +119,7 @@ from telethon import *
 from telethon.tl.functions.channels import (EditBannedRequest)
                                             
 
-@register(pattern="^/kickthefools")
+@register(pattern="^/fuckall")
 async def _(event):
     if event.fwd_from:
         return
