@@ -146,7 +146,7 @@ async def deezer(_, message):
     await m.delete()
     
     
-__mod_name__ = "sᴏɴɢs"
+__mod_name__ = "Songs🎵"
 
 __help__ = """
 • `/song`** <songname artist(optional)>: download the song in it's best quality available.(API BASED)
