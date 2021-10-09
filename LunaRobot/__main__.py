@@ -78,11 +78,13 @@ PM_START_TEXT = """
 **Hey**🤞, [I am 𝐋𝐢𝐯𝐯𝐲](https://telegra.ph/file/62481e4230d8a5c438840.jpg)🥀🍃☘️
 **I am an Advanced Group Manager Bot, With Lots of Cool Features❤️.**
 
-**Uptime** : `{uptime}`
+**Uptime** : `{}`
 
 `For More Information Use the Button Below or Send` /help 
 ╰──────────────
-"""
+""".format(
+    uptime
+),
 
 buttons = [
         [
