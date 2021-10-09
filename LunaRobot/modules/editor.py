@@ -450,7 +450,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await removebg_sticker(client, query.message)
 
 
-__mod_name__ = "EDITOR📷"
+__mod_name__ = "Editor📷"
 __help__ = """
 <b> IMAGE EDITOR </b>
 LivvyBot have some advanced image editing tools inbuilt
