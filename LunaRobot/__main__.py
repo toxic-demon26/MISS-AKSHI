@@ -94,11 +94,6 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="𝐀𝐛𝐨𝐮𝐭🎀", callback_data="Luna_"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
             text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬🤞", url=f"https://t.me/RhythmOfficial"
         ),
         InlineKeyboardButton(
