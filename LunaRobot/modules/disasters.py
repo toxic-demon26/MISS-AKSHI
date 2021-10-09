@@ -539,7 +539,7 @@ def devlist(update: Update, context: CallbackContext):
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Hero Association Members ⚡️:</b>\n"
+    reply = "<b>Livvy Association Members ⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -560,7 +560,7 @@ def devlist(update: Update, context: CallbackContext):
 #  /demons*:* Lists all Demon disasters
 #  /tigers*:* Lists all Tigers disasters
 #  /wolves*:* Lists all Wolf disasters
-#  /heroes*:* Lists all Hero Association members
+#  /heroes*:* Lists all Livvy Association members
 #  /adddragon*:* Adds a user to Dragon
 #  /adddemon*:* Adds a user to Demon
 #  /addtiger*:* Adds a user to Tiger
