@@ -72,7 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-
+uptime = get_readable_time((time.time() - StartTime))
 PM_START_TEXT = """
 ╭──────────────
 **Hey**🤞, [I am 𝐋𝐢𝐯𝐯𝐲](https://telegra.ph/file/62481e4230d8a5c438840.jpg)🥀🍃☘️
@@ -745,6 +745,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(Luna_about_callback, pattern=r"Luna_")
+    howto_callback_handler = CallbackQueryHandler(livvy_howto_callback, pattern=r"Howto_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
