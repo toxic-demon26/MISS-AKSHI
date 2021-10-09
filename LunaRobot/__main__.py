@@ -397,7 +397,7 @@ def Luna_about_callback(update, context):
 
         
 @run_async
-def livvy_howto_callback(update: Update, context: CallbackContext):
+def livvy_howto_callback(update, context):
     query = update.callback_query
     if query.data == "Howto_":
         query.message.edit_text(
