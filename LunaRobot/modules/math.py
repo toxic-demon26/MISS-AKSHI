@@ -113,7 +113,7 @@ def log(update: Update, context: CallbackContext):
 
 
 
-__mod_name__ = "ᴍᴀᴛʜ"
+__mod_name__ = "Maths🔢"
 
 SIMPLIFY_HANDLER = DisableAbleCommandHandler("math", simplify)
 FACTOR_HANDLER = DisableAbleCommandHandler("factor", factor)
