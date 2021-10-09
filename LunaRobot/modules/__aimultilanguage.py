@@ -114,9 +114,9 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("Luna", "Aco")
-        test = test.replace("Luna", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@Lunaexbot&ownername=@rizexx"
+        test = test.replace("Livvy", "Aco")
+        test = test.replace("Livvy", "Aco")
+        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@MissLivvyBot&ownername=@X_MEN_T"
 
         try:
             r = requests.request("GET", url=URL)
@@ -177,9 +177,9 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("Luna", "Aco")
-        test = test.replace("Luna", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@Lunaexbot&ownername=@rizexx"
+        test = test.replace("Livvy", "Aco")
+        test = test.replace("Livvy", "Aco")
+        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@MissLivvyBot&ownername=@X_MEN_T"
         try:
             r = requests.request("GET", url=URL)
         except:
@@ -251,9 +251,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("Luna", "Aco")
-    test = test.replace("Luna", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@Lunaexbot&ownername=@rizexx"
+    test = test.replace("Livvy", "Aco")
+    test = test.replace("Livvy", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@MissLivvyBot&ownername=@X_MEN_T"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -329,9 +329,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("Luna", "Aco")
-    test = test.replace("Luna", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@Lunaexbot&ownername=@rizexx"
+    test = test.replace("Livvy", "Aco")
+    test = test.replace("Livvy", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@MissLivvyBot&ownername=@X_MEN_T"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -356,7 +356,7 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-Luna AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+Livvy AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
