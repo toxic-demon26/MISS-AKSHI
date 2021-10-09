@@ -58,14 +58,14 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "{} Disini Lagi, Pasti Abis Farming",
-                "{} Akhirnya Kembali",
-                "{} Di Kangenin Banyak Orang Tapi Bukan Gua",
-                "{} Abis Nonton Pasti",
-                "{} Lord Kembali Online",
-                "{} Wapada Orang Goodloking Lagi Online",
-                "Selamat Datang Kembali Lord {}",
-                "Kemana Si {}?\nDia Abis Ngent",
+                "{} Here Again, Definitely After Farming",
+                "{} Finally Back",
+                "{} Missed Many People But Not Cave",
+                "{} After watching for sure",
+                "{} Lord is Back Online",
+                "{} Beware People, Good Looking Again Online",
+                "Welcome Back Lord {}",
+                "Where's Si {}?\nHe's Abandoned",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
@@ -132,7 +132,7 @@ def check_afk(update, context, user_id, fst_name, userc_id):
             res = "{} is afk".format(fst_name)
             update.effective_message.reply_text(res)
         else:
-            res = "{} Sedang Afk.\nAlasan: <code>{}</code>".format(
+            res = "{} Currently Afk.\nReason: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
             update.effective_message.reply_text(res, parse_mode="html")
@@ -151,7 +151,7 @@ dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-__mod_name__ = "ᴀғᴋ"
+__mod_name__ = "AFK📵"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
