@@ -90,6 +90,9 @@ buttons = [
             text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕️", url="t.me/MissLivvyBot?startgroup=true"),
     ],
     [
+        InlineKeyboardButton(text="𝐇𝐨𝐰 𝐭𝐨 𝐒𝐭𝐚𝐫𝐭❓", callback_data="Howto_"),
+    ],
+    [
         InlineKeyboardButton(
             text="𝐀𝐛𝐨𝐮𝐭🎀", callback_data="Luna_"
         ),
@@ -378,6 +381,36 @@ def Luna_about_callback(update, context):
                [
                 [
                  
+                    InlineKeyboardButton(text="Back🔙", callback_data="help_back")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "Luna_back":
+        query.message.edit_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+        )
+
+        
+@run_async
+def livvy_howto_callback(update, context):
+    query = update.callback_query
+    if query.data == "Howto_":
+        query.message.edit_text(
+            text="""**Here's Help regarding How to Start❓**
+
+1. `Firstly Add [Me](t.me/MissLivvyBot?startgroup=true) to your group and`
+2. `After Adding Promote me Manually with Full Rights for Faster Experience.`
+3. `Than Send` `/admincache@MissLivvyBot` `in that Chat to Refresh Admin List in My Database.`""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+               [
+                [
                     InlineKeyboardButton(text="Back🔙", callback_data="help_back")
                  ]
                 ]
