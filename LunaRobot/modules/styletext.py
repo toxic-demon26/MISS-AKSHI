@@ -1,7 +1,9 @@
 from LunaRobot import dispatcher
-from LunaRobot.modules.disable import DisableAbleCommandHandler
+from LunaRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from telegram import ParseMode
 from telegram.ext import run_async
+from telegram.error import BadRequest
+from LunaRobot.modules.helper_funsc.alternate import typing_action
 
 normiefont = [
     "a",
@@ -258,6 +260,7 @@ linedfont = [
 
 
 @run_async
+@typing_action
 def weebify(update, context):
     args = context.args
     message = update.effective_message
@@ -285,6 +288,7 @@ def weebify(update, context):
 
 
 @run_async
+@typing_action
 def bubble(update, context):
     args = context.args
     message = update.effective_message
@@ -312,6 +316,7 @@ def bubble(update, context):
 
 
 @run_async
+@typing_action
 def fbubble(update, context):
     args = context.args
     message = update.effective_message
@@ -339,6 +344,7 @@ def fbubble(update, context):
 
 
 @run_async
+@typing_action
 def square(update, context):
     args = context.args
     message = update.effective_message
@@ -366,6 +372,7 @@ def square(update, context):
 
 
 @run_async
+@typing_action
 def fsquare(update, context):
     args = context.args
     message = update.effective_message
@@ -393,6 +400,7 @@ def fsquare(update, context):
 
 
 @run_async
+@typing_action
 def blue(update, context):
     args = context.args
     message = update.effective_message
@@ -420,6 +428,7 @@ def blue(update, context):
 
 
 @run_async
+@typing_action
 def latin(update, context):
     args = context.args
     message = update.effective_message
@@ -447,26 +456,22 @@ def latin(update, context):
 
 
 @run_async
+@typing_action
 def lined(update, context):
     args = context.args
     message = update.effective_message
     string = ""
-
     if message.reply_to_message:
         string = message.reply_to_message.text.lower().replace(" ", "  ")
-
     if args:
         string = "  ".join(args).lower()
-
     if not string:
         message.reply_text("Usage is `/lined <text>`", parse_mode=ParseMode.MARKDOWN)
         return
-
     for normiecharacter in string:
         if normiecharacter in normiefont:
             linedcharacter = linedfont[normiefont.index(normiecharacter)]
             string = string.replace(normiecharacter, linedcharacter)
-
     if message.reply_to_message:
         message.reply_to_message.reply_text(string)
     else:
@@ -509,11 +514,13 @@ __command_list__ = ["fsquare"]
 __command_list__ = ["blue"]
 __command_list__ = ["latin"]
 __command_list__ = ["lined"]
-__handlers__ = [WEEBIFY_HANDLER]
-__handlers__ = [BUBBLE_HANDLER]
-__handlers__ = [FBUBBLE_HANDLER]
-__handlers__ = [SQUARE_HANDLER]
-__handlers__ = [FSQUARE_HANDLER]
-__handlers__ = [BLUE_HANDLER]
-__handlers__ = [LATIN_HANDLER]
-__handlers__ = [LINED_HANDLER]
+__handlers__ = [
+    BUBBLE_HANDLER,
+    WEEBIFY_HANDLER,
+    FBUBBLE_HANDLER,
+    SQUARE_HANDLER,
+    FSQUARE_HANDLER,
+    LINED_HANDLER,
+    LATIN_HANDLER,
+    BLUE_HANDLER,
+]
