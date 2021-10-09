@@ -241,92 +241,7 @@ def table(update: Update, context: CallbackContext):
         else update.effective_message.reply_text
     )
     reply_text(random.choice(fun_strings.TABLE))
-
-
-normiefont = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
-]
-weebyfont = [
-    "卂",
-    "乃",
-    "匚",
-    "刀",
-    "乇",
-    "下",
-    "厶",
-    "卄",
-    "工",
-    "丁",
-    "长",
-    "乚",
-    "从",
-    "𠘨",
-    "口",
-    "尸",
-    "㔿",
-    "尺",
-    "丂",
-    "丅",
-    "凵",
-    "リ",
-    "山",
-    "乂",
-    "丫",
-    "乙",
-]
-
-
-@run_async
-def weebify(update: Update, context: CallbackContext):
-    args = context.args
-    message = update.effective_message
-    string = ""
-
-    if message.reply_to_message:
-        string = message.reply_to_message.text.lower().replace(" ", "  ")
-
-    if args:
-        string = "  ".join(args).lower()
-
-    if not string:
-        message.reply_text("Usage is `/weebify <text>`", parse_mode=ParseMode.MARKDOWN)
-        return
-
-    for normiecharacter in string:
-        if normiecharacter in normiefont:
-            weebycharacter = weebyfont[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, weebycharacter)
-
-    if message.reply_to_message:
-        message.reply_to_message.reply_text(string)
-    else:
-        message.reply_text(string)
-        
+     
         
 @run_async
 @typing_action
@@ -355,7 +270,6 @@ __help__ = """
   /roll*:* Roll a dice
   /rlg*:* Join ears,nose,mouth and create an emo ;-;
   /shout <keyword>*:* write anything you want to give loud shout
-  /weebify <text>*:* returns a weebified text
   /sanitize*:* always use this before /pat or any contact
   /pat*:* pats a user, or get patted
   /8ball*:* predicts using 8ball method 
