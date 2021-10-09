@@ -1,6 +1,5 @@
 from LunaRobot import dispatcher
 from LunaRobot.modules.disable import DisableAbleCommandHandler
-from LunaRobot.modules.helper_funsc.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
@@ -259,7 +258,6 @@ linedfont = [
 
 
 @run_async
-@typing_action
 def weebify(update, context):
     args = context.args
     message = update.effective_message
@@ -287,7 +285,6 @@ def weebify(update, context):
 
 
 @run_async
-@typing_action
 def bubble(update, context):
     args = context.args
     message = update.effective_message
@@ -315,7 +312,6 @@ def bubble(update, context):
 
 
 @run_async
-@typing_action
 def fbubble(update, context):
     args = context.args
     message = update.effective_message
@@ -343,7 +339,6 @@ def fbubble(update, context):
 
 
 @run_async
-@typing_action
 def square(update, context):
     args = context.args
     message = update.effective_message
@@ -371,7 +366,6 @@ def square(update, context):
 
 
 @run_async
-@typing_action
 def fsquare(update, context):
     args = context.args
     message = update.effective_message
@@ -399,7 +393,6 @@ def fsquare(update, context):
 
 
 @run_async
-@typing_action
 def blue(update, context):
     args = context.args
     message = update.effective_message
@@ -427,7 +420,6 @@ def blue(update, context):
 
 
 @run_async
-@typing_action
 def latin(update, context):
     args = context.args
     message = update.effective_message
@@ -455,7 +447,6 @@ def latin(update, context):
 
 
 @run_async
-@typing_action
 def lined(update, context):
     args = context.args
     message = update.effective_message
