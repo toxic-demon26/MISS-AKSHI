@@ -156,4 +156,4 @@ __help__ = """
   /wlogo text :  Create your logo with your name
 
  """
-__mod_name__ = "ʟᴏɢᴏ"
+__mod_name__ = "Logo👀"
