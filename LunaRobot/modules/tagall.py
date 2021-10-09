@@ -19,7 +19,7 @@ async def tagall(client, message):
     await message.reply("`Processing.....`")
     sh = get_text(message)
     if not sh:
-        sh = "Hi!"
+        sh = "Heya!"
     mentions = ""
     async for member in client.iter_chat_members(message.chat.id):
         mentions += member.user.mention + " "
@@ -30,7 +30,7 @@ async def tagall(client, message):
         await client.send_message(message.chat.id, j, parse_mode="html")
 
 
-__mod_name__ = "ᴛᴀɢᴀʟʟ"
+__mod_name__ = "Tag-All🏷️"
 __help__ = """
 - /tagall : Tag everyone in a chat
 """
