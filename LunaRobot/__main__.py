@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ╭──────────────
-**Hey**🤞, [I am 𝐋𝐢𝐯𝐯𝐲](https://telegra.ph/file/62481e4230d8a5c438840.jpg)🥀🍃☘️
+**Hey**🤞 {}, [I am 𝐋𝐢𝐯𝐯𝐲](https://telegra.ph/file/62481e4230d8a5c438840.jpg)🥀🍃☘️
 **I am an Advanced Group Manager Bot, With Lots of Cool Features❤️.**
 
 `For More Information Use the Button Below or Send` /help 
@@ -108,7 +108,7 @@ HELP_STRINGS = """
 `Click Buttons Below to Know My Features and CMDs...`
 """
 
-Luna_IMG = "https://telegra.ph/file/62481e4230d8a5c438840.jpg"
+LIVVY_IMG = "https://telegra.ph/file/9a50a0dbbac3e68f0cb3d.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @X_MEN_T \
@@ -215,8 +215,10 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_text(
-                PM_START_TEXT,
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_animation(
+                LIVVY_IMG,
+                caption=PM_START_TEXT.format(escape_markdown(first_name), OWNER_ID),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
