@@ -114,9 +114,7 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("Livvy", "Aco")
-        test = test.replace("Livvy", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@MissLivvyBot&ownername=@X_MEN_T"
+        URL = "https://www.kuki-api.tk/api/apikey=KUKItg111XlOZ/message=hi"
 
         try:
             r = requests.request("GET", url=URL)
@@ -124,7 +122,7 @@ async def hmm(client, message):
             return
 
         try:
-            result = r.json()
+            result = reply.json()
         except:
             return
 
