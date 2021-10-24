@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ╭──────────────
-**Hey**🤞 {}, I am 𝐋𝐢𝐯𝐯𝐲🥀🍃☘️
+**Hey**🤞 {}, I am ᴀᴋꜱʜɪ🥀🍃☘️
 **I am an Advanced Group Manager Bot, With Lots of Cool Features❤️.**
 
 `For More Information Use the Button Below or Send` /help 
@@ -85,17 +85,17 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕️", url="t.me/MissLivvyBot?startgroup=true"),
+            text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕️", url="t.me/Miss_Akshi_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="𝐇𝐨𝐰 𝐭𝐨 𝐒𝐭𝐚𝐫𝐭❓", callback_data="Howto_"),
     ],
     [
         InlineKeyboardButton(
-            text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬🤞", url=f"https://t.me/RhythmOfficial"
+            text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬🤞", url=f"https://t.me/phoenix_music_new"
         ),
         InlineKeyboardButton(
-            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭😍", url=f"https://t.me/RhythmOff"
+            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭😍", url=f"https://t.me/phoenix_music_suport"
         ),
     ],
     [
@@ -108,10 +108,10 @@ HELP_STRINGS = """
 `Click Buttons Below to Know My Features and CMDs...`
 """
 
-LIVVY_IMG = "https://telegra.ph/file/9a50a0dbbac3e68f0cb3d.mp4"
+LIVVY_IMG = "https://telegra.ph/file/a9443b6240df15ccd0424.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @X_MEN_T \
+ You can support the project via [Paypal](#) or by contacting @akshi_s_ashu1 \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at."""
 
@@ -225,7 +225,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Hey🤞, I am 𝐋𝐢𝐯𝐯𝐲🥀🍃☘️.\n<b>Uptime:</b> <code>{}</code>".format(
+            "Hey🤞, I am ᴀᴋꜱʜɪ🥀🍃☘️.\n<b>Uptime:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -363,9 +363,9 @@ def livvy_howto_callback(update, context):
         query.message.edit_text(
             text="""**Here's Help regarding How to Start❓**
 
-1. `Firstly Add [Me](t.me/MissLivvyBot?startgroup=true) to your group and`
+1. `Firstly Add [Me](t.me/Miss_Akshi_bot?startgroup=true) to your group and`
 2. `After Adding Promote me Manually with Full Rights for Faster Experience.`
-3. `Than Send` `/admincache@MissLivvyBot` `in that Chat to Refresh Admin List in My Database.`""",
+3. `Than Send` `/admincache@Miss_Akshi_bot` `in that Chat to Refresh Admin List in My Database.`""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -391,7 +391,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""Hi..🤗 I'm *𝐋ɪᴠᴠʏ*
+            text="""Hi..🤗 I'm *ᴀᴋꜱʜɪ*
                  \nHere is the [Source Code](https://github.com/Noob-kittu/YoneRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -687,7 +687,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "𝐋𝐢𝐯𝐯𝐲🥀🍃☘️ is Back on Fire🔥")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "ᴀᴋꜱʜɪ🥀🍃☘️ is Back on Fire🔥")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
