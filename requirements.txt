@@ -71,3 +71,4 @@ nudepy
 motor
 cloudscraper
 opencv-python-headless
+PyYAML>=5.3.1
