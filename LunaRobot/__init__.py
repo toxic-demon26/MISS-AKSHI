@@ -190,6 +190,7 @@ else:
         LOGGER.warning("Can't connect to SpamWatch!")
 
 
+aiohttpsession = ClientSession() 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Luna", API_ID, API_HASH)
 pbot = Client("Lunapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
