@@ -21,6 +21,8 @@ aiohttp
 Pillow>=4.2.0
 CurrencyConverter
 tzlocal~=2.0
+#googletrans
+google_trans_new
 jikanpy
 speedtest-cli
 coffeehouse==2.2.4
@@ -72,6 +74,3 @@ opencv-python-headless
 
 PyYAML>=5.3.1
 loguru
-#googletrans
-#google_trans_new
-googletrans==3.1.0a0
