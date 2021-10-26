@@ -6,7 +6,7 @@ from LunaRobot import MONGO_DB_URI
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 from LunaRobot.Config import get_int_key, get_str_key
-
+from LunaRobot import LOGGER as log
 
 MONGO_PORT = get_int_key("27018")
 MONGO_DB_URI = get_str_key("MONGO_DB_URI")
