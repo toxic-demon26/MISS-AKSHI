@@ -91,8 +91,7 @@ def totranslate(update: Update, context: CallbackContext):
                         else:
                             dest_lang = temp_source_lang.split("-", 1)[1]
                             source_lang = temp_source_lang.split("-", 1)[0]
-
-elif temp_source_lang.count("-") == 1:
+            elif temp_source_lang.count("-") == 1:
                 for lang in problem_lang_code:
                     if lang in temp_source_lang:
                         dest_lang = None
