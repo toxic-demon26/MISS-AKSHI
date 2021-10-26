@@ -13,7 +13,7 @@ from pyrogram import filters
 
 from LunaRobot import BOT_ID
 from LunaRobot.helper_extra.aichat import add_chat, get_session, remove_chat
-from LunaRobot.pyrograme.pluginshelper import admins_only, edit_or_reply
+from LunaRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
 from LunaRobot import pbot as hexzy
 
 translator = google_translator()
