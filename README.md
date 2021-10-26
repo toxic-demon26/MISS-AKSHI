@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://telegra.ph/file/e38e9af544bafa53a3b3b.jpg">
+   <img src="https://telegra.ph/file/a9443b6240df15ccd0424.jpg">
 </p>
 
 # Miss Akshi
