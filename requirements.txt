@@ -74,3 +74,4 @@ opencv-python-headless
 
 PyYAML>=5.3.1
 loguru
+google_translator
