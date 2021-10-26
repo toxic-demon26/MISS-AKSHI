@@ -3,8 +3,8 @@ from googletrans import LANGUAGES, Translator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Avenger import dispatcher
-from Avenger.modules.disable import DisableAbleCommandHandler
+from LunaRobot import dispatcher
+from LunaRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
