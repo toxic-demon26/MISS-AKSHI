@@ -108,7 +108,7 @@ HELP_STRINGS = """
 `Click Buttons Below to Know My Features and CMDs...`
 """
 
-LIVVY_IMG = "https://telegra.ph/file/a9443b6240df15ccd0424.jpg"
+LIVVY_IMG = "https://telegra.ph/file/0aa91255b7484be6c1984.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @akshi_s_ashu1 \
