@@ -9,7 +9,6 @@ import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
 from aiohttp import ClientSession
-from LunaRobot import log
 
 StartTime = time.time()
 
