@@ -83,7 +83,7 @@ PM_START_TEXT = """
 """
 
 buttons = [
-        [
+    [
         InlineKeyboardButton(
             text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕️", url="t.me/Miss_Akshi_bot?startgroup=true"),
     ],
@@ -92,11 +92,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬🤞", url=f"https://t.me/phoenix_music_new"
-        ),
+            text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬🤞", url=f"https://t.me/phoenix_music_new")
         InlineKeyboardButton(
-            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭😍", url=f"https://t.me/phoenix_music_suport"
-        ),
+            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭😍", url=f"https://t.me/phoenix_music_suport")
     ],
     [
         InlineKeyboardButton(text="𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐌𝐃𝐬❓", callback_data="help_back"),
