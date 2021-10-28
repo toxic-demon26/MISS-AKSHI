@@ -99,7 +99,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐌𝐃𝐬❓", callback_data="help_back"),
+        InlineKeyboardButton(text="𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐌𝐃𝐬❓", url=f"http://t.me/Miss_Akshi_bot?start=help"
     ],
 ]
 
