@@ -11,6 +11,6 @@ A modular Telegram Python bot running on python3 with a sqlalchemy database.
 
 ## DEPLOY ON HEROKU :
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/darkphoenix2601/Miss-Akshi)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/toxic-demon26/MISS-AKSHI)
 
 
